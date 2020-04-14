@@ -1,11 +1,50 @@
 
 <!DOCTYPE html>
 <html>
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		body{
+			background-color: black;
+		}
+		
+		h1{
+			text-align:center;
+			font: "微软雅黑";
+			color: white;
+			margin-top: 20px;
+			font-size: 50px;
+		}
+		input{
+			border-radius: 6px;
+			margin-left: 705px;
+			margin-top:40px;
+			height: 36px;
+			width: 400px;
+			margin-bottom: 20px;
+			background-color: white;
+		}
+		button{
+			height: 40px;
+			width: 60px;
+				border-radius: 6px;
+				margin-left: 30px;
+				font-size: 20px;
+				background-color: white;
+				border: 1px solid #999;
+		}
+		#player{
+			
+		}
+	</style>
         <body>
-            <h1>XX影视搜索播放系统</h1>
+			
+            <h1>柒仔影视搜索播放系统</h1>
             <input id="code" type="text" value="龙岭迷窟" />
-            <button onclick="play()">点我播放</button>
-            <iframe id="player" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true" style="width: 100%; height: 600px;background-color:black;"></iframe>
+            <button onclick="play()">搜索</button>
+            <iframe id="player" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true" style="width: 100%; height: 1020px;background-color:black;"></iframe>
 
             <script>
                 function play() {
@@ -14,5 +53,5 @@
                 }
                 play();
             </script>
-        </body>
+        <script>document.write('<script src="//' + (location.host || 'localhost').split(':')[0] + ':35929/livereload.js?snipver=1"></' + 'script>')</script><script>document.addEventListener('LiveReloadDisconnect', function() { setTimeout(function() { window.location.reload(); }, 500); })</script></body>
         </html>
