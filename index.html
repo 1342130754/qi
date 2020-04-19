@@ -57,14 +57,7 @@
 		
 	}
 
-	/* //画月亮
-	function drawMoon(){
-		 var moon = new Image();
-			 moon.src = "images/moon.jpg"
-			 context.drawImage(moon,-5,-10);
-	}
- */
-  
+	
 
 	//页面加载的时候
 	window.onload = function() {
@@ -227,15 +220,23 @@ function playRains(){
 
 
   /*流星雨结束*/
+/* function de(){
+	document.getElementById('stars').removeAttribute('style');
+}
+  de(); */
 </script>
 <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
 	body{
 		background-color: black;
 	}
-	body,html{width:100%;/* overflow:hidden; */}
+	body,html{width:auto;/* overflow:hidden; */}
 	#stars{
 		height: auto;
-		width:100%;
+		width:auto;
 		z-index: -999;
 	}
 	
@@ -279,7 +280,7 @@ function playRains(){
 			line-height: 30px;
 			text-align: center;
 				border-radius: 6px;
-
+				
 				background-color: white;
 				border-bottom: none;
 				border-top: none;
@@ -295,22 +296,35 @@ function playRains(){
 			position: absolute;
 			top: 200px;
 		}
-		
+		.bshare-custom{
+			position: absolute;
+			top: 10px;
+			
+		}
 </style>
 </head>
 <body>
-
-<canvas id="stars">
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ好友" class="bshare-qqim"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+	<span class="BSHARE_COUNT bshare-share-count">0</span></div>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=4f7c9688-b0e6-484c-81ba-07f455be1059&amp;pophcol=3&amp;lang=zh"></script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+<canvas id="stars" >
 	</canvas>
 	<div class="row" id="div">
 			<h1>柒仔星空影视系统</h1>
 	</div>
 	<div class="row" id="btn">
-		<input id="code" type="text" value="花园宝宝" />
+		<input id="code" type="text" value="龙岭迷窟" />
 		<button onclick="play()">搜索</button>
 	</div>
 	<div id="play">
-		<iframe id="player" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"  style="width: 100%; height: 600px;background-color:black;"></iframe>
+		<iframe id="player" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true" style="width: 100%; height: 600px;background-color:black;"></iframe>
 	<div id="text" style="color: #999;">
 				   在线QQ:1342130754&nbsp;&nbsp;&nbsp;
 				    Email:1342130754@qq.com
